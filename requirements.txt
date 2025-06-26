@@ -1,0 +1,2 @@
+botcity-maestro-sdk>=0.5.1,<1.0
+botcity-csv-plugin
