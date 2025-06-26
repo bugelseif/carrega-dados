@@ -10,7 +10,7 @@ Automação desenvolvida para fazer leitura de arquivo em uma pasta específica 
 ### [Datapool](https://documentation.botcity.dev/pt/maestro/features/datapool/#criando-um-datapool)
 
 - Label:
-    - `dados_candidatos`
+    - `dados_cadastro`
 - Status:
     - `Ativo`
 - Política de consumo:

@@ -37,7 +37,7 @@ def main():
             )
 
             # Obtendo a referência do Datapool e cria entrada
-            datapool = maestro.get_datapool(label="orange_canditados")
+            datapool = maestro.get_datapool(label="label_datapool")
             datapool.create_entry(new_item)
 
 
