@@ -70,12 +70,14 @@ def main():
         status=AutomationTaskFinishStatus.SUCCESS
         message="Tafera finalizada com sucesso."
         create_task(maestro)
+        create_task(maestro)
     elif falha == total:
         status=AutomationTaskFinishStatus.FAILED
         message="Tarefa falhou."
     else:
         status=AutomationTaskFinishStatus.PARTIALLY_COMPLETED
         message="Alguns itens falharam, verifique o log."
+        create_task(maestro)
         create_task(maestro)
     
 
