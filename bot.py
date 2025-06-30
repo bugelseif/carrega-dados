@@ -69,17 +69,12 @@ def main():
     if sucesso == total:
         status=AutomationTaskFinishStatus.SUCCESS
         message="Tafera finalizada com sucesso."
-        create_task(maestro)
-        create_task(maestro)
     elif falha == total:
         status=AutomationTaskFinishStatus.FAILED
         message="Tarefa falhou."
     else:
         status=AutomationTaskFinishStatus.PARTIALLY_COMPLETED
         message="Alguns itens falharam, verifique o log."
-        create_task(maestro)
-        create_task(maestro)
-    
 
     maestro.post_artifact(
         task_id=execution.task_id,
@@ -95,13 +90,6 @@ def main():
         processed_items=sucesso,
         failed_items=falha
     )
-
-def create_task(maestro):
-    maestro.create_task(
-        activity_label="label_segundo_bot",
-        parameters={},
-        test=True
-)
 
 
 if __name__ == '__main__':
